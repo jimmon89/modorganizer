@@ -2,7 +2,7 @@ name: Build ModOrganizer 2
 
 on:
   push:
-    branches: master
+    branches: 2_5_x
   pull_request:
     types: [opened, synchronize, reopened]
 
