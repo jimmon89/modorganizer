@@ -13,7 +13,6 @@ jobs:
       - name: Build ModOrganizer 2
         uses: ModOrganizer2/build-with-mob-action@master
         with:
-          mo2-owner: jimmon89
           mo2-branch: 2_5_x
           qt-modules: qtpositioning qtwebchannel qtwebengine qtwebsockets
           mo2-third-parties:
