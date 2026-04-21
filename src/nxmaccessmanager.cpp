@@ -1035,7 +1035,9 @@ QNetworkReply* NXMAccessManager::makeOAuthDeleteRequest(QNetworkRequest request)
   return nullptr;
 }
 
-QNetworkReply* NXMAccessManager::makeOAuthCustomRequest(QNetworkRequest request, const QByteArray& verb, const QByteArray& data)
+QNetworkReply* NXMAccessManager::makeOAuthCustomRequest(QNetworkRequest request,
+                                                        const QByteArray& verb,
+                                                        const QByteArray& data)
 {
   if (!m_NexusOAuth->token().isEmpty()) {
     ensureFreshToken();
